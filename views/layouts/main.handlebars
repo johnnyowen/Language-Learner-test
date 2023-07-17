@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8' />
+        <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+        <link
+            href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css'
+            rel='stylesheet'
+            integrity='sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM'
+            crossorigin='anonymous'
+        />
+        <title>Language Learning</title>
+    </head>
+    <body>
+        <ul>
+            <nav class='navbar bg-body-tertiary'>
+                <div class='container-fluid'>
+                    <a class='navbar-brand' href='#'>
+                        <img
+                            src='../assets/images/logo.jpeg'
+                            alt='Logo'
+                            width='30'
+                            height='24'
+                            class='d-inline-block align-text-top'
+                        />
+                        Linguify
+                    </a>
+                </div>
+                {{#if logged_in}}
+                    <li>Welcome {{user.username}}</li>
+                    <li><button
+                            id="logout"
+                            type='button'
+                            class='btn btn-danger'
+                        >Logout</button></li>
+                {{else}}
+                    <li><button type='button' class='btn btn-danger'>Signup or
+                            Login</button></li>
+                {{/if}}
+            </nav>
+        </ul>
+
+        {{{body}}}
+
+        {{#if logged_in}}
+            <h3>Which language do you wish to learn?</h3>
+                <ul>
+                    <li><a href="french">French</a></li>
+                    <li><a href="japanese">Japanese</a></li>
+                    <li><a href="spanish">Spanish</a></li>
+                </ul>
+
+            <a href='#' class='btn btn-primary'>
+                <div class='card' style='width: 18rem;'>
+                    <img src='...' class='card-img-top' alt='...' />
+                    <div class='card-body'>
+                        <p class='card-text'>French</p>
+                    </div>
+                </div>
+            </a>
+            <a href='#' class='btn btn-primary'>
+                <div class='card' style='width: 18rem;'>
+                    <img src='...' class='card-img-top' alt='...' />
+                    <div class='card-body'>
+                        <p class='card-text'>Japanese</p>
+                    </div>
+                </div>
+            </a>
+            <a href='#' class='btn btn-primary'>
+                <div class='card' style='width: 18rem;'>
+                    <img src='...' class='card-img-top' alt='...' />
+                    <div class='card-body'>
+                        <p class='card-text'>Spanish</p>
+                    </div>
+                </div>
+            </a>
+        {{/if}}
+
+        {{#if logged_in}}
+            <script src='/js/logout.js'></script>
+        {{/if}}
+        <script
+            src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js'
+            integrity='sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz'
+            crossorigin='anonymous'
+        ></script>
+    </body>
+</html>

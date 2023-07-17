@@ -1,0 +1,33 @@
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-color: #bfada3;
+}
+
+nav {
+    background-color: #b89685;
+    padding: 25px;
+    margin: 20px;
+}
+
+#log-button {
+    float: right;
+}
+
+#signup-button {
+    float: right;
+}
+
+.card-text {
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+.navbar-brand {
+    font-family: 'Merriweather', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}

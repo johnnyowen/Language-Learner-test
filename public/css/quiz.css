@@ -1,0 +1,43 @@
+.options {
+    color: black;
+    font-weight: bold;
+    float: right;
+    margin-right: 24px;
+}
+
+#start {
+    height: 60px;
+    width: 100px;
+    font-size: 16px;
+    margin-left: 50%;
+    margin-top: 15%;
+}
+
+#flag {
+    margin-left: 51%;
+    margin-bottom: 4%;
+}
+
+#question {
+    text-align: center;
+}
+
+#A {
+    float: left;
+    margin-right: 30px;
+}
+
+#B {
+    float: right;
+    margin-left: 30px;
+}
+
+#C {
+    float: left;
+    margin-right: 30px;
+}
+
+#D {
+    float: right;
+    margin-left: 30px;
+}
